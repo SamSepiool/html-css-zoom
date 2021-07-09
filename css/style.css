@@ -1,0 +1,44 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+/* common */
+
+/* header */
+header{
+    height: 60px;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px; 
+}
+
+
+
+ .fa-shield-alt,
+ .fa-video{
+    color:green;
+    font-size: 15px;
+}
+
+.shield,
+.rec,
+.view{
+    border-radius: 5px;
+    background-color: black;
+    padding: 5px;
+    color: white;
+}
+
+ .rec,
+ .view{
+    padding: 10px;    
+}
+
+.view{
+    background-color: #212122;
+} 
