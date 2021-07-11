@@ -4,47 +4,43 @@
     padding: 0; 
     box-sizing: border-box;
 }
-
 /* common */
-
-body{
-    /* height: 100vh; */
+.btn{
+    border-radius: 5px;
 }
-
 /* header */
 header{
     height: 50px;
     background-color: #1a1a1a;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
     padding: 0px 5px; 
+   
 }
 
- .fa-shield-alt,
- .fa-video{
+ .fa-shield-alt{
     color:green;
     font-size: 15px;
 }
 
-.shield,
-.rec,
-.view{
-    border-radius: 5px;
-    background-color: black;
+header button{
     padding: 5px;
     color: white;
+    border:none;
 }
 
- .rec,
- .view{
-    padding: 10px;    
+.h-button-shield,
+.h-button-rec{
+    background-color: #101010;
+}
+.h-button-rec{
+padding: 10px 15px;
 }
 
-.view{
+header div:last-child button{
     background-color: #212122;
-} 
-
+}
 
 /* main */
 main{
@@ -65,7 +61,7 @@ main{
     color: #2dbbff;
     text-align: center;
     padding: 20px;
-    
+    cursor: pointer;
 }
 
 .piano-tiles{
@@ -88,13 +84,44 @@ main{
 footer{
     height: 50px;
     background-color: #222426;
-    color: #aaabac;
+    color: #aaabac;   
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
-
-
-
 }
 
+footer button{
+    margin: 0px 20px;
+    color: #aaabac;
+    background: inherit;
+    border: none;
+}
+
+.fa-microphone,
+.fa-video,
+.fa-shield-virus,
+.fa-user-friends,
+.fa-comment-alt,
+.fa-share,
+.fa-pause-circle,
+.fa-stop-circle,
+.fa-smile{
+    font-size: 20px;
+}
+
+i + .fa-angle-up,
+span + .fa-angle-up {
+    position: absolute;
+    margin-left: 20px;
+}
+
+footer button span{
+    position: absolute;
+}
+
+.footerright button{
+    background-color: #e02828;
+    padding: 5px 25px 10px 25px;
+    color: white; 
+
+}
